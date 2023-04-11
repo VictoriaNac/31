@@ -23,9 +23,7 @@ func NewUserDB(db *DataBase) *UserDB {
 	return &UserDB{db: db}
 }
 
-// CreateUser creates a user in the database. Processes data: name, age, list of friends.
-// Updates the friends list of other users. Updates the last id.
-// If successful, it returns the id of the new user
+
 func (r *UserDB) CreateUser(user user_app.RequestCreate) (string, error) {
 	age, err := strconv.Atoi(user.Age)
 	if err != nil {
@@ -72,9 +70,7 @@ func (r *UserDB) CreateUser(user user_app.RequestCreate) (string, error) {
 	return fmt.Sprintf("New user id: %v", id), nil
 }
 
-// MakeFriends makes two users friends. Reads two user IDs
-// Updates the friend lists of two users.
-// If successful, it returns a message that two users are friends
+
 func (r *UserDB) MakeFriends(sourceId, targetId string) (string, error) {
 	sourceUser, err := r.getUser(sourceId)
 	if err != nil {
@@ -102,9 +98,7 @@ func (r *UserDB) MakeFriends(sourceId, targetId string) (string, error) {
 	return fmt.Sprintf("%v и %v теперь друзья", targetId, sourceId), nil
 }
 
-// DeleteUser deletes users from the database. Reads ID
-// Updates the friends list of other users.
-// If successful, it returns a message that the user has been deleted
+
 func (r *UserDB) DeleteUser(id string) (string, error) {
 	user, err := r.getUser(id)
 	if err != nil {
@@ -135,9 +129,7 @@ func (r *UserDB) DeleteUser(id string) (string, error) {
 	return fmt.Sprintf("%v удален", user.Name), nil
 }
 
-// GetFriend retrieves the user's friend list from the database.
-// Reads id.
-// If successful, it returns the friends slice
+
 func (r *UserDB) GetFriends(id string) ([]string, error) {
 	user, err := r.getUser(id)
 	if err != nil {
@@ -152,9 +144,7 @@ func (r *UserDB) GetFriends(id string) ([]string, error) {
 	return friends, nil
 }
 
-// UpdateAge updates the user's age in the database.
-// Reads ID and age.
-// If successful, it returns a message that the user's age has been updated
+
 func (r *UserDB) UpdateAge(id, age string) (string, error) {
 	user, err := r.getUser(id)
 	if err != nil {
@@ -176,9 +166,7 @@ func (r *UserDB) UpdateAge(id, age string) (string, error) {
 	return "Возраст пользователя успешно обновлён", nil
 }
 
-// getUser retrieves a user from the database. Reads ID.
-// Deserializes from JSON format
-// If successful, it returns *UserItem
+
 func (r *UserDB) getUser(id string) (*UserItem, error) {
 	ctx := context.Background()
 
@@ -196,8 +184,7 @@ func (r *UserDB) getUser(id string) (*UserItem, error) {
 	return &user, err
 }
 
-// setUser writes the user to the database. Reads ID and *UserItem.
-// Serializes to JSON format
+
 func (r *UserDB) setUser(id string, user *UserItem) error {
 	ctx := context.Background()
 

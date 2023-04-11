@@ -34,14 +34,14 @@ func main() {
 	log.Err(server.ListenAndServe()).Msg("Proxy is not running")
 }
 
-// initConfig() initializes configuration files
+
 func initConfig() error {
 	viper.AddConfigPath("configs")
 	viper.SetConfigName("config_proxy")
 	return viper.ReadInConfig()
 }
 
-// initLogging() sets the logging settings
+
 func initLogging() {
 	zerolog.TimeFieldFormat = zerolog.TimeFormatUnixMs
 

@@ -12,8 +12,7 @@ type DataBase struct {
 	rdb *redis.Client
 }
 
-// NewDataBase connects to the redis database. Finds the last key
-// Returns *DataBase
+
 func NewDataBase() (*DataBase, error) {
 	rdb := redis.NewClient(&redis.Options{
 		Addr:     viper.GetString("redis.addr") + ":" + viper.GetString("redis.port"),
@@ -24,7 +23,7 @@ func NewDataBase() (*DataBase, error) {
 	return &DataBase{rdb: rdb}, nil
 }
 
-// Close closes the connection to the database
+
 func (db *DataBase) Close() error {
 	err := db.rdb.Close()
 	if err != nil {
@@ -34,8 +33,7 @@ func (db *DataBase) Close() error {
 	return nil
 }
 
-// max searches for the maximal element
-// Returns maximal element
+
 func max(a, b int) int {
 	if a > b {
 		return a
