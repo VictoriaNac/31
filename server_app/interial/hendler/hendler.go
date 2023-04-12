@@ -2,7 +2,7 @@ package handler
 
 import (
 	"github.com/go-chi/chi/v5"
-	"github.com/kuzminprog/skillbox_golang/tree/main/30/internal/service"
+	"final/server_app/internal/service"
 )
 
 type Handler struct {

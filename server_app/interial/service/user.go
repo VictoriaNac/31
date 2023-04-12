@@ -2,7 +2,7 @@ package service
 
 import (
 	user_app "github.com/kuzminprog/skillbox_golang/tree/main/30"
-	"github.com/kuzminprog/skillbox_golang/tree/main/30/internal/repository"
+	"final/server_app/internal/repository"
 )
 
 type UserService struct {

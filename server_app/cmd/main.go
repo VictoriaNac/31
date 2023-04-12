@@ -8,9 +8,9 @@ import (
 	"syscall"
 
 	user_app "github.com/kuzminprog/skillbox_golang/tree/main/30"
-	"github.com/kuzminprog/skillbox_golang/tree/main/30/internal/handler"
-	"github.com/kuzminprog/skillbox_golang/tree/main/30/internal/repository"
-	"github.com/kuzminprog/skillbox_golang/tree/main/30/internal/service"
+	"final/server_app/internal/handler"
+	"final/server_app/internal/repository"
+	"final/server_app/internal/service"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/viper"
