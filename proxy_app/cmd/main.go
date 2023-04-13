@@ -4,7 +4,7 @@ import (
 	"flag"
 	"net/http"
 	"os"
-	proxyapp "proxy"
+	proxyapp "finish/proxy_app"
 
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"

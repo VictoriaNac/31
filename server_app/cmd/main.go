@@ -7,7 +7,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	user_app "github.com/kuzminprog/skillbox_golang/tree/main/30"
+	user_app "finish/server_app"
 	"final/server_app/internal/handler"
 	"final/server_app/internal/repository"
 	"final/server_app/internal/service"
