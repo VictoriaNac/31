@@ -8,12 +8,12 @@ import (
 	"syscall"
 
 	user_app "finish/server_app"
-	"final/server_app/internal/handler"
-	"final/server_app/internal/repository"
-	"final/server_app/internal/service"
-	"github.com/rs/zerolog"
-	"github.com/rs/zerolog/log"
-	"github.com/spf13/viper"
+	"finish/server_app/internal/handler"
+	"finish/server_app/internal/repository"
+	"finish/server_app/internal/service"
+	//"github.com/rs/zerolog"
+	//"github.com/rs/zerolog/log"
+	//"github.com/spf13/viper"
 )
 
 func main() {

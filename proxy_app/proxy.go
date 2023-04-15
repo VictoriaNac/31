@@ -6,8 +6,8 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/rs/zerolog/log"
-	"github.com/spf13/viper"
+	//"github.com/rs/zerolog/log"
+	//"github.com/spf13/viper"
 )
 
 type Proxy struct {
