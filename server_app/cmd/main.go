@@ -11,9 +11,9 @@ import (
 	"finish/server_app/internal/handler"
 	"finish/server_app/internal/repository"
 	"finish/server_app/internal/service"
-	//"github.com/rs/zerolog"
-	//"github.com/rs/zerolog/log"
-	//"github.com/spf13/viper"
+	"github.com/rs/zerolog"
+	"github.com/rs/zerolog/log"
+	"github.com/spf13/viper"
 )
 
 func main() {

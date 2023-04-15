@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-//"github.com/rs/zerolog/log"
+"github.com/rs/zerolog/log"
 )
 
 
