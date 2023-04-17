@@ -2,7 +2,7 @@ package service
 
 import (
 	user_app "github.com/VictoriaNac/finish"
-	"finish/server_app/internal/repository"
+	"github.com/VictoriaNac/finish/server_app/interial/repository"
 )
 
 type UserService struct {

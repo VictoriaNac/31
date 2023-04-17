@@ -2,7 +2,8 @@ package handler
 
 import (
 	"github.com/go-chi/chi/v5"
-	"finish/server_app/internal/service"
+	"github.com/VictoriaNac/finish/server_app/interial/service"
+	
 )
 
 type Handler struct {
