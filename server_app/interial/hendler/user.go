@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/go-chi/chi/v5"
-	user_app "github.com/kuzminprog/skillbox_golang/tree/main/30"
+	user_app "github.com/VictoriaNac/finish"
 	"github.com/rs/zerolog/log"
 )
 

@@ -1,7 +1,7 @@
 package service
 
 import (
-	user_app "github.com/kuzminprog/skillbox_golang/tree/main/30"
+	user_app "github.com/VictoriaNac/finish"
 	"finish/server_app/internal/repository"
 )
 

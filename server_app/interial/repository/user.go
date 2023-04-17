@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strconv"
 
-	user_app "github.com/kuzminprog/skillbox_golang/tree/main/30"
+	user_app "github.com/VictoriaNac/finish"
 )
 
 type UserItem struct {

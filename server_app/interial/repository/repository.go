@@ -1,6 +1,7 @@
 package repository
 
-import user_app "github.com/kuzminprog/skillbox_golang/tree/main/30"
+import  
+user_app "github.com/VictoriaNac/finish"
 
 type User interface {
 	CreateUser(user user_app.RequestCreate) (string, error)
