@@ -1,3 +1,3 @@
-module github.com/VictoriaNac/finish
+module finish
 
 go 1.20
