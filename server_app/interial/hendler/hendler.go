@@ -2,7 +2,7 @@ package handler
 
 import (
 	"github.com/go-chi/chi/v5"
-	"github.com/VictoriaNac/finish/server_app/interial/service"
+	"finish/server_app/interial/service"
 	
 )
 

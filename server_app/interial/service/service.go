@@ -2,7 +2,7 @@ package service
 
 import (
 	user_app "github.com/VictoriaNac/finish"
-	"github.com/VictoriaNac/finish/server_app/interial/repository"
+	"finish/server_app/interial/repository"
 )
 
 type User interface {
